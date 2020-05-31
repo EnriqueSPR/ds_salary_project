@@ -26,7 +26,7 @@
 
 **YouTube Project Walk-Through**: https://www.youtube.com/playlist?list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t
 
-# Web Scraping
+# 1. Web Scraping
 
 Tweaked the web scraper github repo (above) to scrape 1000 job postings from glassdoor.com. With each job, we got the following:
 
@@ -58,7 +58,7 @@ Tweaked the web scraper github repo (above) to scrape 1000 job postings from gla
 
 * Competitors
 
-# Data Cleaning
+# 2. Data Cleaning
 
 After scraping the data, I needed to clean it up so that it was usable for our model. I made the following changes and created the following variables:
 
@@ -89,7 +89,7 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 
 * Column for description length
 
-# Exploratory Data Analyses (EDA)
+# 3. Exploratory Data Analyses (EDA)
 
 Looked at the distributions of the data, value counts and correlation among the various categorical variables. Additionally a wordcloud was generated. Below are a few highlight figures.
 
@@ -100,3 +100,24 @@ Looked at the distributions of the data, value counts and correlation among the 
 ![](Images/bar_subplots_ax1_ax2.png)
 
 ![](Images/wordcloud.png)
+
+# 4. Model Building
+Categorical variables  were transformed into dummy variables. Data Wwas splitted into train and tests sets with a test size of 20%.
+
+I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
+
+I tried three different models:
+
+Multiple Linear Regression – Baseline for the model
+Lasso Regression – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
+Random Forest – Again, with the sparsity associated with the data, I thought that this would be a good fit.
+
+**Model Performance**: 
+* Ramdom Forest: MAE = 12.50
+* Linear Regression: MAE = 17.83
+* Lasso Regression: MAE = 18.70
+Model performance
+
+# 5. Productionization
+
+In this step, I built a flask API endpoint that was hosted on a local webserver by following along with the TDS tutorial in the reference section above. The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary.
