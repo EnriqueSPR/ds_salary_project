@@ -89,3 +89,7 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 
 * Column for description length
 
+# Exploratory Data Analyses (EDA)
+
+Looked at the distributions of the data, value counts and correlation among the various categorical variables. Additionally a wordcloud was generated. Below are a few highlight figures.
+![]("C:\Users\enriq\Your_env_name_Notebooks\Github_Project_Ken\Images\bar_subplots_ax1_ax2.png")
