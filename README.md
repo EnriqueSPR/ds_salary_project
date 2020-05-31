@@ -93,4 +93,4 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 
 Looked at the distributions of the data, value counts and correlation among the various categorical variables. Additionally a wordcloud was generated. Below are a few highlight figures.
 
-![](Images\bar_subplots_ax1_ax2.png)
+![](Images/bar_subplots_ax1_ax2.png)
