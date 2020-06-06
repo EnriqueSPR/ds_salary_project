@@ -116,7 +116,6 @@ Random Forest – Again, with the sparsity associated with the data, I thought t
 * Ramdom Forest: MAE = 12.50
 * Linear Regression: MAE = 17.83
 * Lasso Regression: MAE = 18.70
-Model performance
 
 # 5. Productionization
 
