@@ -113,7 +113,7 @@ Lasso Regression – Because of the sparse data from the many categorical variab
 Random Forest – Again, with the sparsity associated with the data, I thought that this would be a good fit.
 
 **Model Performance**: 
-* Ramdom Forest: MAE = 12.50
+* Random Forest: MAE = 12.50
 * Linear Regression: MAE = 17.83
 * Lasso Regression: MAE = 18.70
 
