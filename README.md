@@ -102,7 +102,7 @@ Looked at the distributions of the data, value counts and correlation among the 
 ![](Images/wordcloud.png)
 
 # 4. Model Building
-Categorical variables  were transformed into dummy variables. Data Wwas splitted into train and tests sets with a test size of 20%.
+Categorical variables  were transformed into dummy variables. Data was splitted into train and tests sets with a test size of 20%.
 
 I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
 
