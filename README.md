@@ -1,5 +1,7 @@
 # Data Science Salary Estimator: Project Overview
 
+[**See full project here.**](https://nbviewer.jupyter.org/github/EnriqueSPR/prediction_salary_project/blob/master/salary_prediction_project.ipynb)
+
 * Created a tool that estimates data science salaries to help data scientists negotiate their income when they get a job.
 
 * Scraped over 1000 job descriptions from glassdoor using python and selenium.
